@@ -20,19 +20,21 @@ Model the demand for shared bikes with the available independent variables. It w
 Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors. 
 
 ## Conclusions
-- Features which are affecting the demand are:
-- temp
-- spring
-- humidity
-- winter
-- mist
-- jan
-- jul
-- light_snowrain
-- windspeed
-- spe
+Features which are affecting the demand are:
+- Temprature
+- Season: Spring
+- Season: winter
+- Humidity
+- Weather: mist
+- Weather: light-snow, light-rain
+- Month: Janurary
+- Month: July
+- Month: September
+- Windspeed
+- WeekDay: Sunday
 -	year
-- sun
+###### Equation of Best Fitted line can be determined as
+cnt = 0.2317year + 0.4614temp - 0.1446humidity - 0.1771windspeed - 0.1006spring + 0.0510winter - 0.0408jan -0.0733jul + 0.0566sep - 0.2483light_snowrain -0.0569mist - 0.0417sun
 
 ## Technologies Used
 - numpy 
@@ -44,4 +46,4 @@ Based on various meteorological surveys and people's styles, the service provide
 - scipy
 
 ## Contact
-Created by [@ankurparashar] - feel free to contact me!
+Created by [[@ankurparashar](https://github.com/ankurparashar)] - feel free to contact me!
